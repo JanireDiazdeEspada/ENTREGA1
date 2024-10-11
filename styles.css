@@ -1,0 +1,579 @@
+/* Se aplica a todos los elementos: eliminar márgenes, padding por defecto*/
+   *{
+    margin:0;
+    padding: 0;
+}
+
+/* Estilos para el cuerpo de la página: fuente y color de fondo */
+body{
+    font-family: 'open sans', Arial;
+    background-color: hsl(231, 29%, 22%);
+}
+
+/* Estilos para un contenedor: relleno, ancho máximo, 
+   y centrado automático */
+.contenedor{
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow:hidden;
+}
+
+/* Estilos para el título: tamaño de fuente, color rojo, 
+   centrado horizontalmente con margen inferior */
+.titulo{
+    color: #eb2b09;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Estilos para el encabezado: ancho, alto, 
+   fondo con degradado y una imagen fija */
+header {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, hsl(231, 29%, 22%), hsla(202, 17%, 39%, 0.459)), url(imagenes/gente.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Contenedor del menú: usa Flexbox para alinear los elementos 
+   del menú con espacio entre ellos */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para el ícono del menú: tamaño */
+.menu-icono {
+    width: 250px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+}
+
+/* Estilos para los enlaces de navegación */
+nav > a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Efecto hover para los enlaces de navegación: cambia el fondo a rojo */
+nav > a:hover {
+    background-color: #eb2b09;
+}
+
+/* Contenedor del menú esté por encima de otros elementos con un índice Z mayor */
+.menu-container {
+    position: relative;
+    z-index: 12;
+}
+
+/* Estilos para los textos dentro del encabezado: los centra horizontal 
+   y verticalmente usando transformaciones */
+.textos-header {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Libre Baskerville;
+}
+
+/* Estilo h1 de los textos del header:
+   define el tamaño de la fuente y añade espacio debajo */
+.textos-header h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+/* Estilo h2 dentro de los textos del header: 
+   define un tamaño de fuente más pequeño */
+.textos-header h2 {
+    font-size: 50px;
+}
+
+/* Estilos para el contenedor de los textos en el header: usa Flexbox 
+   para centrar los elementos vertical y horizontalmente */
+header .textos-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilos adicionales para el primer encabezado en el header: 
+   define un tamaño más grande y el color blanco */
+.textos-header h1{
+    font-size: 50px;
+    color:#eb2b09;
+}
+
+/* Estilos adicionales para el segundo encabezado en el header: 
+   define un tamaño grande y el peso de fuente ligero */
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+/* Estilos para el pie de página: define un fondo gris, relleno en la parte superior e inferior,
+   margenes centradas y oculta cualquier contenido desbordante */
+   footer{
+    background: #8c8c97;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Contenedor del pie de página: usa Flexbox para distribuir equitativamente los elementos dentro del pie de página,
+   define un ancho del 90% y agrega un borde inferior rojo */
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eb2b09;
+}
+
+/* Estilos generales para los bloques del footer: centra el texto dentro de cada bloque */
+.content-foo{
+    text-align: center;
+}
+
+/* Estilos para los títulos dentro del footer: color rojo, 
+   añade un borde inferior y espacio inferior para separación */
+.content-foo h4{
+    color: #eb2b09;
+    border-bottom: 3px solid hsl(231, 29%, 22%);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos del footer */
+.content-foo p{
+    color: #ccc;
+}
+
+/* Estilos para el texto final del footer */
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: hsl(231, 29%, 22%);
+}
+
+/* INDEX*/
+/* Sobre nosotros */
+
+/* Contenedor para la sección "Sobre nosotros"*/
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para la imagen */
+.imagen-about-us {
+    width: 45%;
+}
+
+/* Contenedor de textos en la sección "Sobre nosotros": ancho del 50% */
+.contenido-textos {
+    width: 50%; 
+}
+
+/* Estilo para el título */
+.contenido-textos h3 {
+    margin-bottom: 15px; 
+}
+
+/* Estilo para el span dentro del título */
+.contenido-textos h3 span {
+    background: #eb2b09; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 50%; /* Bordes redondeados para crear un círculo */
+    display: inline-block; /* Permite establecer un ancho y alto */
+    text-align: center; /* Centra el texto dentro del span */
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Alto del círculo */
+    padding: 2px; /* Espacio interno */
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); /* Sombra para dar efecto de profundidad */
+    margin-right: 5px; /* Espacio a la derecha del span */
+}
+
+/* Estilo para los párrafos dentro del contenedor de textos: define el relleno y 
+   establece el texto a justificado */
+.contenido-textos p {
+    padding: 0 0 30px 15px; /* Espacio interno a la izquierda y abajo */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilos para la sección de "Servicios": color de fondo*/
+.about-services {
+    background: #f2f2f2; /* Fondo gris claro */
+}
+
+/* Contenedor para los servicios*/
+.servicio-cont {
+    display: flex; 
+    gap: 90px; /* Espacio adicional entre los elementos */
+}
+
+/* Estilo para cada servicio individual: define un ancho del 40% y centra el texto */
+.servicio-ind {
+    width: 40%; 
+    text-align: center; /* Centra el texto dentro de cada servicio */
+}
+
+/* Estilo para las imágenes dentro de cada servicio: define el ancho al 100% y asegura 
+   que la imagen cubra completamente su contenedor */
+.servicio-ind img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+/* Estilo para el título de cada servicio */
+.servicio-ind h3 {
+    margin: 10px 5px; /* Espacio arriba y abajo del título */
+}
+
+/* Estilo para los párrafos dentro de cada servicio*/
+.servicio-ind p {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+/*CARTELERA*/
+/* Estilo para el título de la cartelera */
+.titulo-cartelera {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para la sección que contiene la tabla */
+.tabla-section {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el contenedor de la tabla */
+.tabla-container {
+    background-color: white; /* Fondo blanco para la sección */
+    padding: 10px; /* Ajustado el espaciado interno de la tabla */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margen alrededor de la sección */
+    max-width: 1200px; /* Ancho máximo */
+}
+
+/* Estilo para la tabla */
+.tabla-cartelera {
+    width: 100%; /* Tabla ocupa todo el ancho */
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla-cartelera th, .tabla-cartelera td {
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo para las cabeceras de la tabla */
+.tabla-cartelera th {
+    background-color: #eb2b09; /* Color de fondo de la cabecera */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para las imágenes dentro de la tabla */
+.tabla-cartelera td img {
+    width: 100%; /* Imagen ocupa todo el ancho de la celda */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+/* Estilo para los enlaces en la tabla */
+.tabla-cartelera td a {
+    text-decoration: none; /* Sin subrayado */
+    color: #2980b9; /* Color del enlace */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para los enlaces al pasar el ratón */
+.tabla-cartelera td a:hover {
+    color: #f39c12; /* Cambia el color al pasar el ratón */
+}
+
+
+/* ESTRENOS */
+/* Estilos para la sección estrenos */
+.ultimos-estrenos {
+    padding: 30px 20px; /* Espacio interno para el contenedor */
+    background-color: #ffffff; /* Color de fondo */
+    margin: 20px auto; /* Margen para centrar el contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el título de la sección de estrenos, que se centra y tiene un margen inferior para separación. */
+.titulo-estrenos {
+    text-align: center; /* Texto centrado */
+    margin-bottom: 20px; /* Margen inferior */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+.estreno-mes {
+    margin-bottom: 30px; /* Margen inferior para separación entre grupos */
+}
+
+.estreno-mes h3 {
+    font-size: 20px; /* Tamaño del texto del título mensual */
+    color: hsl(231, 29%, 22%); /* Color del título mensual */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para cada item de estreno */
+.estreno-item {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+.estreno-img {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; 
+    border-radius: 4px; /* Bordes redondeados */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.estreno-info h4 {
+    margin: 10px 0; /* Espacio arriba y abajo */
+    font-size: 18px; /* Tamaño de fuente para el título */
+    color: #eb2b09; /* Color del título del estreno */
+}
+
+.estreno-info h2 {
+    margin: 5px 0; /* Margen para el subtítulo */
+    font-size: 16px; /* Tamaño de fuente del subtítulo */
+    color: #666; /* Color del subtítulo */
+}
+
+.estreno-info p {
+    font-weight: 300; /* Peso ligero de la fuente para la descripción */
+    text-align: left; /* Justificación del texto */
+    margin-right: 30px; 
+    color: #555;
+}
+
+/*RESEÑA*/
+/* Estilo general del formulario */
+.formulario-reseña form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los fieldset */
+.formulario-reseña fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo del legend */
+.formulario-reseña legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los labels */
+.formulario-reseña label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los inputs y selects */
+.formulario-reseña input[type="text"],
+.formulario-reseña input[type="email"],
+.formulario-reseña select,
+.formulario-reseña textarea,
+.formulario-reseña input[type="date"],
+.formulario-reseña input[type="time"] {
+    width: calc(50% - 10px); /* Ajusta el ancho para que no ocupe toda la sección */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#satisfaccion {
+    display: flex;
+    gap: 10px; /* Espaciado entre cada botón */
+    align-items: center;
+}
+
+#satisfaccion label {
+    margin-right: 10px; /* Espacio entre los botones y etiquetas */
+}
+
+
+/* Estilo del textarea */
+/* Estilo del textarea */
+.formulario-reseña textarea {
+    width: calc(100% - 20px); /* Ajusta el ancho del textarea */
+    height: 100px; /* Altura fija */
+    resize: none; /* Deshabilita la opción de redimensionar */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+
+/* Estilo de la sección de enviar y aceptar condiciones */
+.submit-section {
+    display: flex;
+    align-items: flex-start; /* Alinear el checkbox y el texto hacia arriba */
+    justify-content: space-between; /* Espaciado entre el checkbox y el botón */
+    margin-top: 20px;
+}
+
+/* Estilo del botón enviar */
+.formulario-reseña button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo del botón al pasar el cursor */
+.formulario-reseña button:hover {
+    background-color: #1f5a87;
+}
+
+/* Ajustes para el checkbox y el texto */
+.submit-section label {
+    margin: 0; /* Eliminar márgenes para asegurar que el texto esté pegado al checkbox */
+}
+
+/*PELICULA - Estilos para la página de detalles de la película */
+/* Detalles de la película */
+.detalle-pelicula {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Estilo para la información de la película */
+.pelicula-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pelicula-poster {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pelicula-detalles h2 {
+    font-size: 36px; 
+    color: #fff;
+}
+
+.pelicula-detalles p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Estilo para la sección del trailer */
+.trailer-section h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.trailer-section video {
+    border: 4px solid #444;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Estilo para la sección de sinopsis */
+.sinopsis-section h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sinopsis-section p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Estilo para el enlace de 'VOLVER' */
+.volver a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.volver a:hover {
+    background-color: #1f5a87;
+}
+
+/* GRACIAS */
+.page-gracias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Para centrar verticalmente */
+    text-align: center; /* Centra el texto */
+    color: white; /* Color blanco para el texto */
+    margin-top: 30px; /* Margen superior para separar del header */
+    margin-bottom: 60px;
+}
+
+.page-gracias img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: 500px;
+    width: auto;
+    margin-top: 30px; /* Espaciado superior entre el texto y la imagen */
+    margin-bottom: 30px; /* Espaciado inferior entre la imagen y el enlace */
+}

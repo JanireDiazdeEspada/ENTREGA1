@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Establece el idioma del documento como español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINES MIRARI</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" href="imagenes/icono.png" type="image/png"> <!-- Ruta al favicon -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula la hoja de estilos CSS externa -->
+</head>
+
+<body>
+
+    <header class="header"> <!-- Sección de encabezado de la página -->
+        <div class="menu-container"> <!-- Contenedor para el menú de navegación -->
+            <img src="imagenes/CINESMIRARI_LOGO.png" class="menu-icono" alt=""> <!-- Icono del menú -->
+            <nav> <!-- Elemento de navegación -->
+                <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+                <a href="cartelera.html">Cartelera</a> <!-- Enlace a la página de cartelera -->
+                <a href="reseña.html">Reseña</a> <!-- Enlace a la página de reseñas -->
+            </nav>
+        </div>
+
+        <div class="textos-header"> <!-- Contenedor para los textos del encabezado -->
+            <h1>CINES MIRARI</h1> <!-- Título principal de la página -->
+            <h2>Sumérgete en la magia del cine y vive momentos inolvidables</h2> <!-- Subtítulo -->
+        </div>
+    </header>
+
+    <main>
+
+        <div class="detalle-pelicula">
+            <div class="pelicula-info">
+                <img src="imagenes/pelicula1.jpg" alt="Poster de la película" class="pelicula-poster">
+                <div class="pelicula-detalles">
+                    <h2>Transformers One</h2>
+                    <p>Duración: 1h 51m</p>
+                </div>
+            </div>
+
+            <div class="trailer-section">
+                <h3>Trailer</h3>
+                <video src="videos/pelicula1.mp4" controls class="champu"></video>
+            </div>
+
+            <div class="sinopsis-section">
+                <h3>Sinopsis</h3>
+                <p>Es la historia jamás contada del origen de Optimus Prime y Megatron y de cómo pasaron
+                    de ser hermanos de armas que cambiaron el destino de Cybertron para siempre, a
+                    convertirse en enemigos acérrimos.</p>
+            </div>
+
+            <nav class="volver">
+                <a href="cartelera.html">VOLVER A LA CARTELERA</a>
+            </nav>
+
+        </div>
+    </main>
+
+    <footer> <!-- Sección de pie de página -->
+        <div class="contenedor-footer"> <!-- Contenedor para el pie de página -->
+            <div class="content-foo"> <!-- Contenido1 del pie de página -->
+                <h4>Phone</h4> <!-- Título para el número de teléfono -->
+                <p>678889865</p> <!-- Número de teléfono -->
+            </div>
+            <div class="content-foo"> <!-- Contenido2 del pie de página -->
+                <h4>Email</h4> <!-- Título para el email -->
+                <p>cinesmirari@hotmail.es</p> <!-- Dirección de email -->
+            </div>
+            <div class="content-foo"> <!-- Contenido3 del pie de página -->
+                <h4>Location</h4> <!-- Título para la ubicación -->
+                <p>Gran Vía, 33, Centro, 28013 Madrid</p>
+                <!-- Dirección de ubicación -->
+            </div>
+        </div>
+        <h2 class="titulo-final"> &copy; 2024 Cine Plus. Todos los derechos reservados.</h2>
+        <!-- Mensaje de derechos de autor -->
+    </footer>
+    
+</body>
+</html>

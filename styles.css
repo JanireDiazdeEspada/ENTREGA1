@@ -89,19 +89,17 @@ nav > a:hover {
     font-family: Libre Baskerville;
 }
 
-/* Estilos adicionales para el primer encabezado en el header: 
-   define un tamaño más grande y el color blanco */
-.textos-header h1{
-    font-size: 50px;
-    color:#fff;
+/* Estilo h1 de los textos del header:
+   define el tamaño de la fuente y añade espacio debajo */
+.textos-header h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
 }
 
-/* Estilos adicionales para el segundo encabezado en el header: 
-   define un tamaño grande y el peso de fuente ligero */
-.textos-header h2{
-    font-size: 30px;
-    font-weight: 300;
-    color:#ffffff9a;
+/* Estilo h2 dentro de los textos del header: 
+   define un tamaño de fuente más pequeño */
+.textos-header h2 {
+    font-size: 50px;
 }
 
 /* Estilos para el contenedor de los textos en el header: usa Flexbox 
@@ -118,7 +116,7 @@ header .textos-header{
    define un tamaño más grande y el color blanco */
 .textos-header h1{
     font-size: 50px;
-    color:#eb2b09;
+    color:#fff;
 }
 
 /* Estilos adicionales para el segundo encabezado en el header: 
@@ -126,7 +124,7 @@ header .textos-header{
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
-    color:#fff;
+    color:#ffffff9a;
 }
 
 /* Estilos para el pie de página: define un fondo gris, relleno en la parte superior e inferior,
